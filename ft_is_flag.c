@@ -53,15 +53,12 @@ int	ft_flags(char *s, t_menu *l)
 		l->precision_1 += (s[l->i] == '.');
 		l->zero += (s[l->i] == '0' && !l->width && !l->precision_1);
 		if (ft_check(s[l->i], s[l->i + 1], s[l->i + 2]))
-		{
-			l->precision_1 = 0;
-			l->width = 0;
-		}
+			(1) && (l->precision_1 = 0, l->width = 0);
 		else if (!l->precision_1 && s[l->i] >= '0' && s[l->i] <= '9')
-			l->width = (l->width * 10 + s[l->i] - '0')
+			l->width = (l->width * 10 + s[l->i] - '0') \
 				* (s[l->i] >= '0' && s[l->i] <= '9');
 		else if (l->precision)
-			l->lenght = (l->lenght * 10 + s[l->i] - '0')
+			l->lenght = (l->lenght * 10 + s[l->i] - '0') \
 				* (s[l->i] >= '0' && s[l->i] <= '9');
 		l->i++;
 	}
