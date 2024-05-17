@@ -20,8 +20,8 @@ static int	ft_is_flag(char c)
 
 static int	ft_check(char c, char c1, char c2)
 {
-	return ((c == '.' && (c1 == ' ' || c1 == '#' || c1 == '+' || c1 == '-')
-			&& (ft_is_flag(c2))) || ((c == '-' || c == '+' || c == ' '
+	return ((c == '.' && (c1 == ' ' || c1 == '#' || c1 == '+' || c1 == '-') \
+			&& (ft_is_flag(c2))) || ((c == '-' || c == '+' || c == ' ' \
 				|| c == '#') && (c1 >= '0' && c1 <= '9')));
 }
 
