@@ -32,7 +32,7 @@ typedef struct s_menu
 	int		lenght;
 }			t_menu;
 
-int		ft_printf(int fd, const char *str, ...);
+int		ft_fprintf(int fd, const char *str, ...);
 int		ft_flags(char *s, t_menu *flags);
 void	ft_print_c(int fd, char s, t_menu *menu, int *count, char c);
 void	ft_print_di(int fd, long int n, t_menu *menu, int *count, char c);
