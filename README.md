@@ -29,7 +29,7 @@ The function is written in C language and thus needs the **`gcc` compiler** and 
 **1. To use the function in your code, simply include a main() with its header:**
 
 ```C
-#include "ft_printf.h"
+#include "ft_fprintf.h"
 ```
 ```C
 int  main()
