@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "ft_fprintf.h"
 
 static int	ft_is_flag(char c)
 {
