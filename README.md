@@ -1,47 +1,71 @@
 <h1 align="center">
-	📖 Fprintf
+	📖 fprintf
 </h1>
 
 <p align="center">
-	<b><i>mimicking the fprintf function in c</i></b><br>
+	<b><i>printing data in the given file descriptor</i></b><br>
 </p>
-
 <p align="center">
-	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/jdecorte-be/42-Get-next-line?color=lightblue" />
-	<img alt="Number of lines of code" src="https://img.shields.io/tokei/lines/github/jdecorte-be/42-Get-next-line?color=critical" />
-	<img alt="Code language count" src="https://img.shields.io/github/languages/count/jdecorte-be/42-Get-next-line?color=yellow" />
-	<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/jdecorte-be/42-Get-next-line?color=blue" />
-	<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/jdecorte-be/42-Get-next-line?color=green" />
+<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/Cloneg7/fprintf?color=lightblue" />
+<img alt="Code language count" src="https://img.shields.io/github/languages/count/Cloneg7/fprintf?color=yellow" />
+<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Cloneg7/fprintf?color=blue" />
 </p>
 
-<h3 align="center">
-	<a href="#%EF%B8%8F-about">About</a>
-	<span> · </span>
-	<a href="#%EF%B8%8F-usage">Usage</a>
-	<span> · </span>
-	<a href="#-testing">Testing</a>
-</h3>
+## 📜 Table of Contents
 
+- [💡 Mandatory Part](#m)
 
-fprintf: The Formatted Storyteller for C
-Ever wanted your C programs to sing, not just print? Well, fret no more! fprintf is here to be your coding bard!
+# 💡 Mandatory Part with Bonus<a name = "m"></a>
 
-What is fprintf?
+> _This Function :_
+    is used to print formatted output in numerous ways to the standard output stdout.
 
-Imagine a jester in a grand hall, weaving tales with words and wit. fprintf is like that jester, but for your C programs. It takes control of the output stream (think of it as the stage) and uses a format string (the script) to tell a story with your data (the props!).
+### Requirements
 
-How does it work?
+The function is written in C language and thus needs the **`gcc` compiler** and some standard **C libraries**.
 
-fprintf follows a simple recipe:
+### Instructions
 
-The Stage: You provide a file stream (like stdout for the console) where the story unfolds.
-The Script: A format string tells fprintf how to present your data. It uses placeholders like %d for integers, %f for floats, and %s for strings, much like magic markers highlighting your performance.
-The Props: After the format string, you list the data you want to display, like the numbers and messages that bring your story to life.
-Why use fprintf?
+**1. To use the function in your code, simply include a main() with its header:**
 
-Flexibility: Craft informative messages, debug output, or even create formatted reports, all with a single function.
-Control: Decide exactly how your data is presented, from decimal places to alignment.
-Power: Combine multiple data types and text in a single formatted string.
-Ready to get started?
+```C
+#include "ft_printf.h"
+```
+```C
+int  main()
+{
+  ft_printf("%s\n", "hello world");
+  return (0);
+}
+```
 
-For a full performance review, check out the C documentation for fprintf ([man page fprintf]). But don't worry, even jesters need practice. There are plenty of online tutorials and examples to help you write your C program's greatest hits!
+#### 📋 Testing
+> _Simply run this command (change X with the file of the main function):_
+```shell
+make && gcc X
+```
+-------
+# The Bonus
+
+> _As a <code>bonus</code> to the Mandatory requirement, the function should :_
+	<ul>
+         <li>Manage any combination of the following flags: ’-0.’ and the field minimum width under all conversions.</li>
+         <li>Manage all the following flags: ’# +’ (Yes, one of them is a space)</li>
+	<ul/>
+ ### main example :
+```C
+#include <stdio.h>
+
+int main()
+{
+    printf("%-7d\n", 1337);
+    printf("%07s\n", "1337");
+    printf("%+7d\n", 1337);
+    return 0;
+}
+```
+### Running :
+```shell
+./a.out | cat -e
+1337   $
+0001337$
