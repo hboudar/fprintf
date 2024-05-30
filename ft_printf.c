@@ -32,7 +32,7 @@ static void	ft_format(int fd, char format, t_menu *menu, int *count)
 		ft_print_u(fd, va_arg(menu->list, unsigned int), menu, count, ' ');
 }
 
-int	ft_printf(int fd, const char *str, ...)
+int	ft_fprintf(int fd, const char *str, ...)
 {
 	t_menu	menu;
 
