@@ -6,11 +6,11 @@
 /*   By: hboudar <hboudar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/29 21:52:22 by hboudar           #+#    #+#             */
-/*   Updated: 2024/04/28 15:22:41 by hboudar          ###   ########.fr       */
+/*   Updated: 2024/05/30 16:08:27 by hboudar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "ft_fprintf.h"
 
 static int	ft_treat_nbr(int fd, long int nbr, t_menu *menu, int *count, int operator)
 {

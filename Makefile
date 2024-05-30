@@ -3,7 +3,7 @@ C_FILES	=	ft_printf.c  ft_is_flag.c ft_print_c.c  ft_print_s.c\
 			ft_print_sp.c ft_print_xx.c ft_precision_di.c
 
 O_FILES =	${C_FILES:.c=.o}
-H_FILE	=	ft_printf.h
+H_FILE	=	ft_fprintf.h
 CFLAGS	=	-Wall -Wextra -Werror
 NAME	=	libftprintf.a
 CC		=	cc

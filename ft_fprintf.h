@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_fprintf.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hboudar <hboudar@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/29 21:14:55 by hboudar           #+#    #+#             */
-/*   Updated: 2024/04/28 15:34:50 by hboudar          ###   ########.fr       */
+/*   Updated: 2024/05/30 16:09:00 by hboudar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#ifndef FT_FPRINTF_H
+# define FT_FPRINTF_H
 
 # include <unistd.h>
 # include <stdarg.h>
