@@ -34,7 +34,7 @@ The function is written in C language and thus needs the **`gcc` compiler** and 
 ```C
 int  main()
 {
-  ft_printf("%s\n", "hello world");
+  ft_fprintf(1, "%s\n", "hello world");
   return (0);
 }
 ```
@@ -58,9 +58,9 @@ make && gcc X
 
 int main()
 {
-    printf("%-7d\n", 1337);
-    printf("%07s\n", "1337");
-    printf("%+7d\n", 1337);
+    fprintf(1, "%-7d\n", 1337);
+    fprintf(2, "%07s\n", "1337");
+    fprintf(3, "%+7d\n", 1337);
     return 0;
 }
 ```
